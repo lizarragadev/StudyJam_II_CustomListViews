@@ -5,9 +5,9 @@
     <string name="main.pk2.titulo">Ivysaur</string>
     <string name="main.pk3.titulo">Venusaur</string>
     <string name="main.pk4.titulo">Charmander</string>
-    <string name="main.pk5.titulo">EEE</string>
-    <string name="main.pk6.titulo">FFF</string>
-    <string name="main.pk7.titulo">GGG</string>
+    <string name="main.pk5.titulo">Charmeleon</string>
+    <string name="main.pk6.titulo">Charizard</string>
+    <string name="main.pk7.titulo">Squirtle</string>
     <string name="main.pk8.titulo">HHH</string>
     <string name="main.pk9.titulo">III</string>
     <string name="main.pk10.titulo">JJJ</string>
@@ -56,9 +56,9 @@
     <string name="main.pk2.subtitulo">Defense, Attack, Speed</string>
     <string name="main.pk3.subtitulo">Speed, Special defense, Special attack</string>
     <string name="main.pk4.subtitulo">Solar power, Blaze, Speed</string>
-    <string name="main.pk5.subtitulo">EEE</string>
-    <string name="main.pk6.subtitulo">FFF</string>
-    <string name="main.pk7.subtitulo">GGG</string>
+    <string name="main.pk5.subtitulo">Solar power, Blaze, Speed</string>
+    <string name="main.pk6.subtitulo">Speed, Special defense, Special attack</string>
+    <string name="main.pk7.subtitulo">Rain dish</string>
     <string name="main.pk8.subtitulo">HHH</string>
     <string name="main.pk9.subtitulo">III</string>
     <string name="main.pk10.subtitulo">JJJ</string>

@@ -2,6 +2,7 @@ package com.miramicodigo.studyjam_customlistview;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,18 +14,12 @@ import java.util.ArrayList;
 
 /**
  * @author Gustavo Lizarraga
- * @version 1.0
- * @date 16/12/2016
+ * @version 1.1
+ * @date 16/12/2016 - Modified: 19/12/2016
  * #DevStudyJam
  * */
 
 public class CustomAdapter extends BaseAdapter {
-    /**
-     * @author Gustavo Lizarraga
-     * @version 1.0
-     * @date 16/12/2016
-     * #DevStudyJam
-     * */
 
     private Context context;
     private ArrayList<Pokemon> items;
@@ -59,9 +54,18 @@ public class CustomAdapter extends BaseAdapter {
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
+
+        Typeface tf_thing = Typeface.createFromAsset(
+                context.getAssets(), "fonts/roboto_thin.ttf");
+        Typeface tf_bold = Typeface.createFromAsset(
+                context.getAssets(), "fonts/roboto_light.ttf");
+
+        viewHolder.itemNombre.setTypeface(tf_bold);
+        viewHolder.itemTipo.setTypeface(tf_thing);
+
         Pokemon currentItem = (Pokemon) getItem(position);
         viewHolder.itemNombre.setText(currentItem.getNombre());
-        viewHolder.itemHabilidades.setText(currentItem.getHabilidades());
+        viewHolder.itemTipo.setText(currentItem.getHabilidades());
         viewHolder.itemImagen.setImageResource(currentItem.getImagen());
 
         return convertView;
@@ -69,12 +73,12 @@ public class CustomAdapter extends BaseAdapter {
 
     private class ViewHolder {
         TextView itemNombre;
-        TextView itemHabilidades;
+        TextView itemTipo;
         ImageView itemImagen;
 
         public ViewHolder(View view) {
             itemNombre = (TextView)view.findViewById(R.id.tvTitulo);
-            itemHabilidades = (TextView) view.findViewById(R.id.tvSubtitulo);
+            itemTipo = (TextView) view.findViewById(R.id.tvSubtitulo);
             itemImagen = (ImageView) view.findViewById(R.id.ivImagen);
         }
     }

@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".SplashscreenActivity"
-            android:label="PokeList">
+        <activity android:name=".MainActivity"
+            android:label="@string/main.titulo"></activity>
+        <activity android:name=".SplashscreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".DetalleActivity"
-            android:label="Pokemon"></activity>
+            android:label="@string/detalle.titulo"></activity>
     </application>
 
 </manifest>

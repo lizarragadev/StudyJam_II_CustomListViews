@@ -4,18 +4,18 @@ import java.io.Serializable;
 
 /**
  * @author Gustavo Lizarraga
- * @version 1.0
- * @date 16/12/2016
+ * @version 1.1
+ * @date 16/12/2016 - Modified: 19/12/2016
  * #DevStudyJam
  * */
 
-public class Pokemon {
+
+public class Pokemon implements Serializable{
     private String Nombre;
-    private String Habilidades;
+    private String Tipo;
     private int Imagen;
 
     public Pokemon() {
-
     }
 
     public Pokemon(String nombre) {
@@ -24,12 +24,12 @@ public class Pokemon {
 
     public Pokemon(String nombre, String habilidades) {
         Nombre = nombre;
-        Habilidades = habilidades;
+        Tipo = habilidades;
     }
 
     public Pokemon(String nombre, String habilidades, int imagen) {
         Nombre = nombre;
-        Habilidades = habilidades;
+        Tipo = habilidades;
         Imagen = imagen;
     }
 
@@ -42,11 +42,11 @@ public class Pokemon {
     }
 
     public String getHabilidades() {
-        return Habilidades;
+        return Tipo;
     }
 
     public void setHabilidades(String habilidades) {
-        Habilidades = habilidades;
+        Tipo = habilidades;
     }
 
     public int getImagen() {

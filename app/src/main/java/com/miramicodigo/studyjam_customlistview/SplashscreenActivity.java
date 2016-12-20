@@ -10,10 +10,9 @@ import android.widget.ImageView;
 public class SplashscreenActivity extends AppCompatActivity {
 
     /**
-     *
      * @author Gustavo Lizarraga
-     * @version 1.0
-     * @date 16/12/2016
+     * @version 1.1
+     * @date 16/12/2016 - Modified: 19/12/2016
      * #DevStudyJam
      * */
 

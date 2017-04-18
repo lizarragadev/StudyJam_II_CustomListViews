@@ -1,16 +1,13 @@
 package com.miramicodigo.studyjam_customlistview;
 
-import java.io.Serializable;
-
 /**
+ *
  * @author Gustavo Lizarraga
- * @version 1.1
- * @date 16/12/2016 - Modified: 19/12/2016
- * #DevStudyJam
+ * @date 18/04/2017
+ *
  * */
 
-
-public class Pokemon implements Serializable{
+public class Pokemon {
     private String Nombre;
     private String Tipo;
     private int Imagen;

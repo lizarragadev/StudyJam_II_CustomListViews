@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/StudyJam_CustomListView.iml" filepath="$PROJECT_DIR$/StudyJam_CustomListView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SJ_A_1_17_CustomListView.iml" filepath="$PROJECT_DIR$/SJ_A_1_17_CustomListView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

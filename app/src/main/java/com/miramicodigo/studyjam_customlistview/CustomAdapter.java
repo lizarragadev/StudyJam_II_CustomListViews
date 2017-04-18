@@ -13,10 +13,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
+ *
  * @author Gustavo Lizarraga
- * @version 1.1
- * @date 16/12/2016 - Modified: 19/12/2016
- * #DevStudyJam
+ * @date 18/04/2017
+ *
  * */
 
 public class CustomAdapter extends BaseAdapter {
@@ -54,14 +54,6 @@ public class CustomAdapter extends BaseAdapter {
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
-
-        Typeface tf_thing = Typeface.createFromAsset(
-                context.getAssets(), "fonts/roboto_thin.ttf");
-        Typeface tf_bold = Typeface.createFromAsset(
-                context.getAssets(), "fonts/roboto_light.ttf");
-
-        viewHolder.itemNombre.setTypeface(tf_bold);
-        viewHolder.itemTipo.setTypeface(tf_thing);
 
         Pokemon currentItem = (Pokemon) getItem(position);
         viewHolder.itemNombre.setText(currentItem.getNombre());
